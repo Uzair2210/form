@@ -1,4 +1,9 @@
 body{
     text-align: center;
-    background-color: lightblue;
-    }
+    background-color: rgb(142, 140, 140);
+}
+input{
+    padding: 6px 5px;
+    border: none;
+    
+}

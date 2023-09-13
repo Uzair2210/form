@@ -1,12 +1,8 @@
 const mongoose = require('mongoose')
-
 var formModel = mongoose.model("form",new mongoose.Schema({
-    FN:String,
-    LN:String,
+    FName:String,
+    LName:String,
     Email:String,
-    G:String,
-    D:String,
+    Gender:String,
 }))
-
-
 module.exports = formModel
