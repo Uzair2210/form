@@ -10,12 +10,12 @@ app.use("/form/registration", studentRoutes);
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-app.get("/form", function(req, res) {
+app.get("/", function(req, res) {
   res.render('form');
 });
 
 mongoose.connect("mongodb://127.0.0.1:27017").then((res) => {
-    console.log("Database Connection established");
+    console.log("Database Connected");
 }).catch((error) => {
     console.log(error.message);
 });
