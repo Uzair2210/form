@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+var port = process.env.PORT || 3000
 const studentRoutes = require('./routes/form');
 const mongoose = require('mongoose');
 
@@ -14,7 +14,7 @@ app.get("/", function(req, res) {
   res.render('form');
 });
 
-mongoose.connect("mongodb://127.0.0.1:27017").then((res) => {
+mongoose.connect("mongodb+srv://uzair:uzair5225@uzaircluster.fdml45t.mongodb.net/hello?retryWrites=true&w=majority").then((res) => {
     console.log("Database Connected");
 }).catch((error) => {
     console.log(error.message);
