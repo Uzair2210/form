@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get("/", function(req, res) {
-  res.render('Form');
+  res.render('form');
 });
 
 mongoose.connect("mongodb+srv://uzair:uzair5225@uzaircluster.fdml45t.mongodb.net/Registration?retryWrites=true&w=majority").then((res) => {
