@@ -9,7 +9,7 @@ app.use(express.json());
 app.use("/form/registration", studentRoutes);
 
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.use(express.static(__dirname+'/public'));
 
 app.get("/", function(req, res) {
   res.render(__dirname+'/views/form.ejs');
